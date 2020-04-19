@@ -7,6 +7,9 @@ TagManager:
   - Coin
   - Ground
   - Enemy
+  - PowerUp
+  - Wall
+  - PowerUp2
   layers:
   - Default
   - TransparentFX
@@ -16,10 +19,10 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - 
-  - 
-  - 
+  - Player
+  - PowerUp
+  - Enemy
+  - Obstacle
   - 
   - 
   - 
@@ -41,6 +44,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2041438937
+    locked: 0
+  - name: Enemy
+    uniqueID: 2870435079
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2170870631
     locked: 0

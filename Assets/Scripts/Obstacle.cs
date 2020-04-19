@@ -23,7 +23,7 @@ public class Obstacle : MonoBehaviour
         startTime = Time.time;
 
         // Calculate the journey length.
-        journeyLength = Vector2.Distance(startMarker.position, endMarker.position);
+        journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
     }
 
     // Follows the target position like with a spring
@@ -36,6 +36,9 @@ public class Obstacle : MonoBehaviour
         float fracJourney = distCovered / journeyLength;
 
         // Set our position as a fraction of the distance between the markers and pingpong the movement.
-        transform.position = Vector2.Lerp(startMarker.position, endMarker.position, Mathf.PingPong(fracJourney, 1));
+        transform.position = Vector3.Lerp(startMarker.position, endMarker.position, Mathf.PingPong(fracJourney, 1));
     }
+
+
+
 }
